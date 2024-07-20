@@ -1,0 +1,60 @@
+.simplify {
+    padding-top: 91px;
+    padding-bottom: 91px;
+    background-image: url('../img/simplify_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.simplify__wrapper {
+    text-align: center;
+}
+
+.simplify__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom: 29px;
+}
+
+.simplify__btn {
+    font-weight: 700;
+    font-size: 13px;
+    color: #f3603c;
+    border-radius: 22px;
+    box-shadow: 0 15px 15px -10px #db5943;
+    background-color: #fff;
+    padding: 13px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .simplify {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .simplify__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .simplify__title {
+        max-width: 400px;
+        margin-bottom: 0;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .simplify {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+
+    .simplify__title {
+        max-width: 445px;
+    }
+}

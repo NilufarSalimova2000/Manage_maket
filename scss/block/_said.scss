@@ -1,0 +1,124 @@
+.said {
+    margin-bottom: 42px;
+}
+
+.said__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 141%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #242d52;
+    margin-bottom: 62px;
+}
+
+.said__item {
+    width: 340px;
+    background-color: #fafafa;
+    position: relative;
+    padding: 60px 21px 42px 21px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.said__item::before {
+    content: "";
+    background-image: url('../../img/said_img.png');
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.said__item:nth-child(2) {
+    display: none;
+}
+
+.said__sub_title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #242d52;
+    margin-bottom: 19px;
+}
+
+.said__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 186%;
+    color: #242d52;
+    opacity: 0.5;
+}
+
+.said__btn {
+    font-weight: 700;
+    font-size: 13px;
+    color: #fcf6f5;
+    border-radius: 22px;
+    box-shadow: 0 15px 15px -10px #ff9f8e;
+    background-color: #f3603c;
+    padding: 13px 32px;
+}
+
+.said__btn_block {
+    text-align: center;
+}
+
+.said__btn_block::before {
+    content: "";
+    background-image: url('../../img/said_icon.svg');
+    width: 55px;
+    height: 8px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 26px;
+    margin-bottom: 47px;
+}
+
+@media screen and (min-width:768px) {
+    .said {
+        margin-bottom: 90px;
+    }
+
+    .said__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .said__item:nth-child(2) {
+        display: block;
+    }
+
+    .said__btn_block::before {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .said {
+        margin-bottom: 161px;
+    }
+
+    .said__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 110%;
+        margin-bottom: 95px;
+    }
+
+    .said__list {
+        margin-bottom: 53px;
+    }
+
+    .said__item {
+        width: 460px;
+    }
+}
